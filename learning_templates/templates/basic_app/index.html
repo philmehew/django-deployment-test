@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html"%}
+{% load my_templates %}
+  {% block body_block %}
+  <h1>Welcome to index</h1>
+  {{ text|anothercut:'Hel' }} <!-- using upper case filter -->
+  {{ number|add:20 }} <!-- using add filter to add 20 -->
+  {% endblock %}
